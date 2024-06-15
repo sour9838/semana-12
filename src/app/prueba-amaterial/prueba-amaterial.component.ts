@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
+import { MaterialModule } from '../angular-material/material/material.module';
 
 
 
@@ -29,7 +30,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 @Component({
   selector: 'app-prueba-amaterial',
   standalone: true,
-  imports: [MatButtonModule,MatCardModule, MatButtonModule,MatTableModule],
+  imports: [MaterialModule],
   templateUrl: './prueba-amaterial.component.html',
   styleUrl: './prueba-amaterial.component.css'
 })

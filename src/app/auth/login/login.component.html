@@ -1,0 +1,31 @@
+
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>Ingresa Usuario</mat-card-title>
+    </mat-card-header>
+
+<mat-card-content>
+<div style="display: flex; flex-direction: column;">
+    <mat-form-field appearce="fill">
+        <mat-label>Usuario</mat-label>
+        <input matInput type="Usuario" #usurioText >
+       
+         
+        
+      </mat-form-field>
+      <mat-form-field appearce="fill">
+        <mat-label>Contraseña</mat-label>
+        <input matInput type="password" #passwordText >
+       
+         
+        
+      </mat-form-field>
+      </div>
+      
+</mat-card-content>
+
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="submit(usurioText, passwordText)">INGRESAR</button>
+     
+    </mat-card-actions>
+  </mat-card>
